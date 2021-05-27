@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "RalewayRegular"; 
+    src: url("19890.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+
+body
+{
+    font-family:RalewayRegular;
+    background: url('bg1.jpg') no-repeat top center;
+    background-size: cover;
+    padding-top:12%;
+    color: #00FF00;
+    font-size: 350px;
+}
+
+.form
+{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    margin-left: 23%;
+    padding: 30px;
+    border-radius: 5px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id=canvas style="display: block;">Not supported</canvas>
+    <canvas id=canvas2 style="display:block;margin-top: -44%;margin-left: 42%;position: fixed;">Not supported</canvas>
+    <script>
+        let canv = document.getElementById('canvas');
+        canv.width = window.innerWidth;
+        canv.height = window.innerHeight;
+        let ctx = canv.getContext('2d');
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(950, 640, 150, 0, Math.PI * 2);
+        ctx.stroke();
+        let ctx2 = canv.getContext('2d');
+        ctx2.beginPath();
+        ctx2.arc(950, 390, 100, 0, Math.PI * 2);
+        ctx2.stroke();
+        let p = canv.getContext('2d')
+        p.beginPath();
+        p.arc(950, 385, 15, 0, Math.PI * 2);
+        p.fillStyle = 'red';
+        p.fill();
+        let m = canv.getContext('2d')
+        m.beginPath();
+        m.arc(950, 385, 5, 0, Math.PI * 2);
+        m.fillStyle = 'black';
+        m.fill();
+        let p2 = canv.getContext('2d')
+        p2.beginPath();
+        p2.arc(950, 430, 15, 0, Math.PI * 2);
+        p2.fillStyle = 'red';
+        p2.fill();
+        let m2 = canv.getContext('2d')
+        m2.beginPath();
+        m2.arc(950, 430, 5, 0, Math.PI * 2);
+        m2.fillStyle = 'black';
+        m2.fill();
+        let p3 = canv.getContext('2d')
+        p3.beginPath();
+        p3.arc(950, 340, 15, 0, Math.PI * 2);
+        p3.fillStyle = 'red';
+        p3.fill();
+        let m3 = canv.getContext('2d')
+        m3.beginPath();
+        m3.arc(950, 340, 5, 0, Math.PI * 2);
+        m3.fillStyle = 'black';
+        m3.fill();
+        let ctx3 = canv.getContext('2d');
+        ctx3.beginPath();
+        ctx3.arc(950, 210, 80, 0, Math.PI * 2);
+        ctx3.stroke();
+
+        let nouse = canv.getContext('2d');
+        nouse.fillStyle = '#ff5d00';
+        nouse.lineWidth = 2;
+        nouse.beginPath();
+        nouse.moveTo(950, 220);
+        nouse.lineTo(880, 270);
+        nouse.lineTo(930, 200);
+        //    nouse.closePath();
+        nouse.fill();
+        nouse.stroke();
+        //nouse.stroke();
+
+        let e = canv.getContext('2d')
+        e.beginPath();
+        e.arc(915, 180, 12, 0, Math.PI * 2);
+        e.fillStyle = 'black';
+        e.fill();
+        let e2 = canv.getContext('2d')
+        e2.beginPath();
+        e2.arc(980, 180, 12, 0, Math.PI * 2);
+        e2.fillStyle = 'black';
+        e2.fill();
+
+        let mouth = canv.getContext('2d');
+        mouth.strokeStyle = 'black';
+        mouth.lineWidth = 4;
+        mouth.beginPath();
+        mouth.arc(950, 250, 24, 0, Math.PI);
+        mouth.stroke();
+        mouth.closePath();
+
+        let canv2 = document.getElementById('canvas2');
+        let head = canv.getContext('2d')
+        head.beginPath();
+        head.moveTo(850, 160);
+        head.lineTo(1050, 160);
+        head.lineTo(1000, 0);
+        head.lineTo(890, 0);
+        head.closePath();
+        head.lineWidth = 1;
+        head.fillStyle = "grey";
+        head.stroke();
+        head.fill();
+    </script>
+</body>
+
+</html>

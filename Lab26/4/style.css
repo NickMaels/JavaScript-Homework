@@ -1,0 +1,74 @@
+.holder {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    padding: 0.2%;
+    border: 2px solid black;
+}
+
+.block {
+    transition: .5s ease;
+    position: absolute;
+    left: 0;
+    bottom: 20;
+    right: 0;
+    width: 247px;
+    height: 340px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.holder:hover .block {
+    opacity: 2.5;
+}
+
+.holder:hover .content {
+    opacity: 1;
+}
+
+.holder:hover .button {
+    opacity: 1;
+}
+
+.main {
+    display: flex;
+}
+
+.content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    text-align: center;
+}
+
+.button {
+    transition: .5s ease;
+    opacity: 0;
+    cursor: pointer;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    outline: 0;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: #d3d3d3;
+}
+
+.button:active {
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}

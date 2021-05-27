@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class=radio>
+        <h3>Выберите тип услуги</h3>
+        <input type="radio" name="dil" id="delivery">
+        <label for="delivery">Доставка</label>
+        <input type="radio" name="dil" id="non" checked>
+        <label for="non">На месте</label>
+    </div>
+
+    <table border=0 cellpadding=0 cellspacing=0>
+        <tbody>
+            <tr>
+                <th rowspan="2" width="320" ><img width="320" height="180" src="img/pizza.png" alt=""></th>
+                <th>Марио</th>
+                <th>Колличество</th>
+                <th>Цена</th>
+                <th>Всего</th>
+            </tr>
+            <tr>
+                <th>Салями, Шампиньоны, Сыр, Орегано, Чеснок, Лук</th>
+                <th><button id=minus>-</button><span id=count>     0     </span><button id=plus>+</button></th>
+                <th>75 лей</th>
+                <th><span id=fall>0</span> лей</th>
+            </tr>
+            <tr>
+                <th colspan="5"><hr></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Цена: <span id=count2>0</span> лей<br>
+                    Доставка: <span id=deliver>0</span> лей<br>
+                    Всего: <span id=total>0</span> лей
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

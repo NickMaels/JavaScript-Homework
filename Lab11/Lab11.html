@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class=main>
+        <div class=types>
+            <h3>Типы</h3>
+            <span><img src="img/common.png" width="45px" height="45px">Простейшие</span><br>
+            <span><img src="img/sponge.png" alt=""> Губки</span><br>
+            <span onclick="meduz_edit()" id=red><img src="img/meduza.png" alt=""> Кишечно полостные</span><br>
+            <span onclick="worms_edit()" id=red><img src="img/worms1.png" alt=""> Черви</span><br>
+            <span onclick="mol_edit()" id=red><img src="img/shell.png" alt=""> Молюски</span><br>
+            <span onclick="bugs_edit(this)" id=red> <img src="img/crab.png" alt=""> Членистоногие</span><br>
+            <span onclick="hord_edit(this)" id=red><img src="img/fish.png" alt=""> Хордовые</span><br>
+        </div>
+        <div class=types>
+            <h3>Классы</h3>
+            <span class=bugs><img src="img/lobster.png" alt=""> Ракообразные</span><br>
+            <span class=bugs><img src="img/spider.png" alt=""> Паукообразные</span><br>
+            <span class=bugs onclick="insects_edit()" id=red><img src="img/fly.png" alt=""> Насекомые</span><br>
+            <span class=hord onclick="animals_edit()" id=red><img src="img/koala.png" alt=""> Млекопитающие</span><br>
+            <span class=hord> <img src="img/parrot.png"> Птицы</span><br>
+            <span class=hord> <img src="img/snake.png" alt=""> Пресмыкающиеся</span><br>
+            <span class=hord><img src="img/frog.png" alt=""> Земноводные</span><br>
+            <span class=hord><img src="img/koi.png" alt=""> Рыбы</span><br>
+
+            <span class=meduz><img src="img/jellyfish.png" alt="">Медузообразные</span><br>
+            <span class=meduz><img src="img/koral.png" alt="">Коралы</span><br>
+
+            <span class="worms"><img src="img/worm.png" alt="">Круглый Червь</span><br>
+            <span class="worms"><img src="img/worm1.png" alt="">Плоский Червь</span><br>
+
+            <span class=moluski><img src="img/molusk.png" alt="">Двустворчатый</span><br>
+            <span class=moluski><img src="img/ulitka.png" alt="">Брюхоногие</span><br>
+            <span class=moluski><img src="img/octopus.png" alt="">Головоногие</span><br>
+        </div>
+        <div class=types>
+            <h3>Отряды</h3>
+            <span class=animals><img src="img/hedgehog.png" alt=""> Насекомоядные</span><br>
+            <span class=animals><img src="img/bat.png" alt=""> Рукокрылые</span><br>
+            <span class=animals onclick="rabbit_edit()" id=red><img src="img/mouse.png" alt=""> Грызуны</span><br>
+            <span class=animals onclick="predator_edit()" id=red><img src="img/lion.png" alt=""> Хищные</span><br>
+            <span class=animals><img src="img/kit.png" alt=""> Китообразные</span><br>
+            <span class=animals><img src="img/deer.png" alt=""> Парнокопытные</span><br>
+            <span class=animals><img src="img/elephant.png" alt=""> Хоботные</span><br>
+            <span class=animals><img src="img/monkey.png" alt=""> Приматы</span><br>
+
+            <span class=insect><img src="img/fly2.png" alt=""> Двукрылые</span><br>
+            <span class=insect><img src="img/bug1.png" alt=""> Клопы</span><br>
+            <span class=insect><img src="img/bug.png" alt=""> Жуки</span><br>
+        </div>
+        <div class=types>
+            <h3>Семейства</h3>
+            <span class=rabbit onclick="rabbit_type_edit()" id=red><img src="img/rabbit.png" alt=""> Заячьи</span><br>
+            <span class=rabbit><img src="img/belka.png" alt=""> Белечьи</span><br>
+            <span class=rabbit><img src="img/mouse2.png" alt=""> Мышиные</span><br>
+
+            <span class=predator><img src="img/cat.png" alt=""> Кошачьи</span><br>
+            <span class=predator onclick="predator_type_edit()" id=red><img src="img/dog.png" alt=""> Псовые</span><br>
+            <span class=predator><img src="img/bear.png" alt=""> Медвежьи</span><br>
+            <span class=predator><img src="img/horek.png" alt=""> Куньи</span><br>
+        </div>
+        <div class=types>
+            <h3>Роды</h3>
+            <span class="rabbit_type" onclick="lastRabbit_edit()" id=red><img src="img/rabbit3.png" alt=""> Заяц</span><br>
+            <span class="rabbit_type"><img src="img/rabbit2.png" alt=""> Кролик</span><br>
+
+            <span class="predator_type" onclick="lastPredator_edit()" id=red><img src="img/dog1.png" alt=""> Собака</span><br>
+            <span class="predator_type"><img src="img/fox.png" alt=""> Лисица</span><br>
+        </div>
+        <div class=types>
+            <h3>Виды</h3>
+            <span class=last_r>Заяц-беляк</span><br>
+            <span class=last_r>Заяц-Русак</span><br>
+
+            <span class=last_p>Волк</span><br>
+            <span class=last_p>Шакал</span><br>
+            <span class=last_p>Песец</span><br>
+        </div>
+    </div>
+    
+     
+    <script src="script.js"></script>
+</body>
+</html>

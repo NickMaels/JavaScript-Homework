@@ -1,0 +1,80 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div
+{
+    width: 145px;
+    height: 270px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 1px #b4b4b4;
+    padding: 2px;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.res
+{
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    background-color: #f8f7ed;
+    border: 0px solid lightgrey;
+    box-shadow: 0px 0px #b4b4b4;
+    padding: 30px;
+    padding-left: 40px;
+    right: 75%; 
+    top: 35%; 
+}
+.main
+{
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    height: 300px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-top: 15%;
+}
+input[type=number]
+{
+    width: 18px;
+    height: 20px;
+    padding: 2px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.name
+{
+    color: #ba4833;
+    font-weight: 500;
+    
+}
+.price
+{
+    font-weight: 500;
+    margin-left: 25%;
+    text-align:center;
+}
+
+img {
+    transition: 0.2s; 
+    cursor: pointer;
+   }
+   img:hover {
+    transform: scale(3); 
+   }
+
+button
+{
+    padding: 8px;
+    margin-top: 5%;
+    margin-left: 6%;
+    cursor: pointer;
+    width: 105px;
+    height: 33px;
+}

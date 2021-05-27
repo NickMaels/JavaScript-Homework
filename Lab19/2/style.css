@@ -1,0 +1,46 @@
+.main {
+    margin-left: 35%;
+    width: 1240px !important;
+}
+
+ul {
+    padding: 0;
+    margin-left: -9%;
+}
+
+.show {
+    border: solid 1px #ccc;
+    width: 550px;
+    height: 400px;
+    padding: 5px;
+    margin: auto;
+}
+
+li {
+    border: solid 1px #ccc;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+    list-style-type: none;
+}
+
+li:hover {
+    border-color: #FF9900;
+}
+
+.button {
+    border-radius: 100%;
+    background-color: #888888;
+    cursor: pointer;
+}
+
+p {
+    padding: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}

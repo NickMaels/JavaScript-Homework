@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="main">
+     
+            <div>
+                <span class=name>Nike Bruin Mid</span><br><br><br>
+                <img width=112 height="102" src="img/nike.png" alt="">
+                <span class=price>29.99$</span><br>
+                <span><b>How many?</b> <input type="number" name="" id="first" min="1" value="1"></span><br>
+                <button id=firstb onclick="firstEvent()">Add to Basket</button>
+            </div>
+            <div>
+                <span class=name>Сonverse All Star Mono Ox</span><br><br>
+                <img width=112 height="102" src="img/2.png" alt="">
+                <span class=price>45.00$</span><br>
+                <span><b>How many?</b> <input type="number" name="" id="second" min="1" value="1"></span><br>
+                <button id=secondb onclick="secondEvent()">Add to Basket</button>
+            </div>
+            <div>
+                <span class=name>Converse Simpsons Bart Hi Trainers</span><br><br>
+                <img width=112 height="102" src="img/3.png" alt=""><br>
+                <span class=price>24.99$</span><br>
+                <span><b>How many?</b>  <input type="number" name="" id="treed" min="1" value="1"></span><br>
+                <button id=treeb onclick="treeEnvet()">Add to Basket</button>
+            </div>
+
+            <div class=res><i style="font-size: 28px;">Shoping Card</i> <br> <br> Total items: <span id=items>0</span> <br><br> Total Units: <span id=units>0</span><br> <br>Total $: <span id=price>0.00</span></div>
+        </div>
+
+        
+<script src="script.js"></script>
+</body>
+</html>

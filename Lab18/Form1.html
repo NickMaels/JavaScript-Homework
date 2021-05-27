@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Input Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h1>User Input Form</h1>
+
+<form class=form-wrap>
+<fieldset>
+<legend>Personal Particular</legend>
+Name:<span>*Проверьте имя </span><br>
+<input type=text name=Name id=name>
+
+<br>
+Password:<span>*Пароль должен содержать 6+ символов </span><br>
+<input type=password name=Password id=password> <br>
+<div class=radio>
+Gender:
+<input type=radio name=gender id=male value=male>
+<label for=male>Male</label>
+
+<input type=radio name=gender id=female value=female>
+<label for=female>Female</label><br>
+</div>
+<span>*Выберите пол </span><br>
+Age:
+<select id=select>
+<option disabled selected>Выберите</option>
+<option>1 &#60; years</option>
+<option>2 years</option>
+<option>5 years</option>
+<option>5 &#62; years</option>
+</select>
+<span>*Выберите стаж работы </span>
+</fieldset>
+
+<fieldset>
+<legend>Language</legend>
+<div class=checkbox>
+<input type=checkbox id="Java" name=Java value=Java>
+<label for="Java">Java</label>
+
+<input type=checkbox id=C/C++ name=C/C++ value=C/C++>
+<label for=C/C++>C/C++</label>
+
+<input type=checkbox id=C# name=C# value=C#>
+<label for=C#>C#</label>
+</div>
+<span>*Выберите хотя бы один язык </span>
+</fieldset>
+
+<fieldset>
+<legend>Instruction</legend>
+<textarea id=Instruction placeholder="Enter your instructions here....." rows=10 cols=60></textarea>
+<span>*Введите что то о себе</span>
+</fieldset>
+
+<div style="margin-left: 8%;">
+<input type=button value=SEND onclick="check()">
+<input type=reset value=CLEAR>
+</div>
+</form>
+<script src="script.js"></script>
+
+
+</body>
+</html>

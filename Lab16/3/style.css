@@ -1,0 +1,169 @@
+body
+{
+    background: url(bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding-top:6%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    color: black;
+    width: 315px;
+    height: 580px;
+    padding: 0px 30px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.7);
+}
+span
+{
+    font-size: 13px;
+    color: red;
+}
+textarea
+{
+    resize: none;
+    border-radius: 5px;
+    border:1px solid black;
+}
+textarea:focus
+{
+    border:2px solid black;
+    outline: none;
+}
+
+input[type=number],[type=text],[type=email]
+{
+	width:240px;
+	height:32px;
+	border-radius:5px;
+	border:1px solid #111111;
+	font-size:15px;
+	color:#555555;
+	outline: 0;
+    outline-offset: 0;
+	padding-left:4px;
+}
+input[type=number]:focus
+{
+	border:2px solid black;
+}
+input[type=text]:focus
+{
+	border:2px solid black;
+}
+input[type=email]:focus
+{
+	border:2px solid black;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+select
+{
+	width:250px;
+	height:35px;
+	border-radius:5px;
+	border:1px solid #111111;
+	font-size:15px;
+	color:#555555;
+	outline: 0;
+    outline-offset: 0;
+	cursor: pointer;
+	
+}
+select:focus
+{
+	border:2px solid black;
+}
+
+[type="button"]
+{
+	width:250px;
+	height:32px;
+	border-radius:5px;
+	border:1px solid #111111;
+	font-size:15px;
+	color:#555555;
+	outline: 0;
+    outline-offset: 0;
+	padding-left:4px;
+	cursor: pointer;
+}
+[type="button"]:hover
+{
+	background:#d6d6d6;
+}
+[type="button"]:active
+{
+	background:#ffffff;
+}
+
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    }
+    input[type=radio] {
+    display: none;
+    }
+    label:before {
+    content: "";
+    display: inline-block;
+    
+    width: 16px;
+    height: 16px;
+    
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: white;
+    border: 0.5px solid black;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    }
+    .radio label:before {
+    border-radius: 8px;
+    }
+    
+    
+    input[type=radio]:checked + label:before {
+    content: "\2022";
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 11.5px;
+    }
+    
+    input[type=checkbox] {
+    display: none;
+    }
+    
+    .checkbox label:before {
+    border-radius: 3px;
+    }
+    
+    input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    }

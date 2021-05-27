@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <p>Проверка формы</p>
+
+            <span>*Неверное имя </span>
+            <span>*Пароль должен быть от 4 до 8 символов</span>
+            <span>*Пароли не совпадают</span>
+            <span>*Неверно введен адрес</span>
+            <span>*Введите информацию о себе</span>
+
+        <input type="text" id=name placeholder="Имя пользователя*"><br>
+
+        <input type="text" id=password1 placeholder="Пароль*"><br>
+
+        <input type="text" id=password2 placeholder="Повторить пароль*"><br>
+
+        <input type="email" name="" id="email" placeholder="Электронная почта*">
+
+        <div class=radio>
+           Показывать email?<br>
+            <input type="radio" name="comment" id="yes">
+            <label for="yes">Да</label>
+            
+            <input type="radio" name="comment" id="no">
+            <label for="no">Нет</label>
+        </div>
+
+        <input type="number" name="" id="number" placeholder="Номер телефона">
+
+        <div>
+            О себе:<br> <textarea name="" id="about" cols="32" rows="5" placeholder="Информация о вас*"></textarea><br>
+        </div>
+
+        <div class="checkbox">
+            Получать рассылку: <input type="checkbox" name="check" id="yeah">
+            <label for="yeah"></label> 
+        </div>
+
+        <input type="button" value="Отправить" onclick="validateForm()">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

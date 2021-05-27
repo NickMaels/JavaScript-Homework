@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 368px;
+            min-height: 50px;
+            border: 1px solid black;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        p {
+            width: 360px;
+            height: 22px;
+            padding: 3px;
+            border: 1px solid black;
+        }
+        
+        #text {
+            width: 360px;
+            height: 30px;
+        }
+        
+        button {
+            float: right;
+            font-weight: 600;
+            color: rgb(202, 61, 61);
+            outline: none;
+            border-radius: 50%;
+            border: 1.5px solid red;
+            background: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            color: rgb(253, 0, 0)
+        }
+        
+        button:active {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=box>
+        <input type="text" id=text placeholder="Введите задачу">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

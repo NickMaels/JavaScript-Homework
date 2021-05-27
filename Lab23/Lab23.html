@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 960px !important;
+        }
+        
+        #div1,
+        #div2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 200px;
+            height: 400px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        
+        #div3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        
+        .elem {
+            width: 195px;
+            height: 23px;
+            border: 1px solid black;
+            padding: 1%;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+        }
+        
+        .elem:hover {
+            background: lightgray;
+        }
+        
+        p {
+            margin-left: 20%;
+            width: 150px;
+            height: 25px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        img {
+            margin-left: 8.5%;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        document.addEventListener("dragenter", function(event) {
+            if (event.target.className == "droptarget") {
+                event.target.style.border = "3px dotted red";
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>Students</p>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag3>Student A</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag4>Student B</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag6>Student C</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag0>Student D</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag1>Student F</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag2>Student G</div>
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag5>Student H</div>
+        </div>
+    </div>
+    <div>
+        <p>Team A</p>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag7>Student I</div>
+        </div>
+    </div>
+    <div>
+        <p style="margin-left:10%;">Team B</p>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class=elem draggable="true" ondragstart="drag(event)" id=drag8>Student J</div>
+        </div>
+        <img width="30%" height="40%" src="trash.png" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+
+
+    <br>
+
+</body>
+
+</html>

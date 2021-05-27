@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        table {
+            border-spacing: 0px 0px;
+            border: 1px solid black;
+        }
+        
+        table td {
+            border: 1px solid black;
+            font-size: 24px;
+        }
+        
+        td,
+        th {
+            table-layout: fixed;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        div {
+            float: right;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id=reset>Начать сначала</button><br>
+    <span id=win>Выйграл:</span><br>
+    <div id=results>
+        Выйграл X: <span id=winx>0</span><br><br> Выйграл O: <span id=wino>0</span><br><br> Ничья:
+        <span id=nobody>0</span><br>
+    </div><br>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

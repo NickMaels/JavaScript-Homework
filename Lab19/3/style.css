@@ -1,0 +1,60 @@
+.bar {
+    width: 20%;
+    background-color: grey;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pepsiBar {
+    width: 1%;
+    height: 30px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+#colaBar {
+    width: 1%;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+#fantaBar {
+    width: 1%;
+    height: 30px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
+
+#spriteBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+button
+{
+    width: 150px;
+    height: 30px;   
+    cursor: pointer;
+    background: white;
+    outline: none;
+    border: 1px solid black;
+    font-size: 18px;
+}
+button:hover
+{
+    background: lightgray;
+    outline: none;
+}
+button:active
+{
+    background: white;
+    outline: none;
+}

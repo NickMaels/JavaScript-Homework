@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select" onchange="Select(this)">
+        <option disabled selected value>Выбери фигуру!</option>
+        <option value="Квадрат">Квадрат</option>
+        <option value="Прямоугольник">Прямоугольник</option>
+        <option value="Треугольник">Треугольник</option>
+        <option value="Круг">Круг</option>
+        <option value="Параллелограма">Параллелограм</option>
+    </select><br><br>
+
+
+    <div id=square>
+        <span>Введи сторону квадрата:<input type="number" placeholder="Например 4"></span>
+    </div>
+
+    <div id=rectangle>
+        <span>Введи первую сторону прямоугольника:<input type="number" placeholder="Например 10"></span><br><br>
+        <span>Введи вторую сторону прямоугольника:<input type="number" placeholder="Например 5"></span>
+    </div>
+
+    <div id=triangle>
+        <span>Введи первую сторону треугольника:<input type="number" placeholder="Например 24"></span><br><br>
+        <span>Введи вторую сторону треугольника:<input type="number" placeholder="Например 26"></span><br><br>
+        <span>Введи третью сторону треугольника:<input type="number" placeholder="Например 10"></span>
+    </div>
+
+    <div id=circle>
+        <span>Введи радиус круга:<input type="number" placeholder="Например 3"></span>
+    </div>
+    
+    <div id=parallelogram>
+        <span>Введи первую сторону параллелограма:<input type="number" placeholder="Например 4"></span><br><br>
+        <span>Введи вторую сторону параллелограма:<input type="number" placeholder="Например 8"></span><br><br>
+        <span>Введи меру угла параллелограма:<input type="number" placeholder="Например 120°"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

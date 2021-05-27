@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            border:1px solid black;
+            border-radius: 15px;
+        }
+        select
+        {
+	    width:300px;
+	    height:35px;
+	    border-radius:5px;
+	    border:1px solid #111111;
+	    font-size:15px;
+	    color:#555555;
+	    outline: 0;
+        outline-offset: 0;
+	    cursor: pointer;
+        }
+select:focus
+{
+	border:2px solid black;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+        <select name="" id="main" onchange="Select(this)">
+            <option disabled selected>Выберите страну</option>
+            <option value="">Россия</option>
+            <option value="">Израиль</option>
+            <option value="">Чехия</option>
+            <option value="">Бельгия</option>
+        </select>
+    </div>
+    <br>
+    <img src="" alt="" id=img><br><br>
+    <select name="" id="Russia">
+        <option value="">Москва</option>
+        <option value="">Рязань</option>
+        <option value="">Тверь</option>
+        <option value="">Тула</option>
+    </select>
+
+    <select name="" id="Israel">
+        <option value="">Тель-Авив</option>
+        <option value="">Иерусалим</option>
+        <option value="">Эйлат</option>
+        <option value="">Газа</option>
+    </select>
+
+    <select name="" id="Czech">
+        <option value="">Прага</option>
+        <option value="">Брно</option>
+        <option value="">Карловы Вары</option>
+        <option value="">Острава</option>
+    </select>
+
+    <select name="" id="Belgium">
+        <option value="">Брюссель</option>
+        <option value="">Брюгге</option>
+        <option value="">Гент</option>
+        <option value="">Антверпен</option>
+    </select>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>

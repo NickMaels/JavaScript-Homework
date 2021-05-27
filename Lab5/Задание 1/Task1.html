@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task1</title>
+</head>
+<body>
+    
+<div class="form"> 
+    <h1>Задание 1</h1>
+    <input class=number type="number" placeholder="Четырехзначное число" id="number_in" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;"  ><br>    
+    <input placeholder="Зашифрованное число" class=result type="text" id="result" readonly><br>
+    <button type="button" onclick="encryption()">Зашифровать</button>
+
+</div>
+
+
+</body>
+</html>

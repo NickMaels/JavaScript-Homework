@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="radio" id="pepsi" name=drink>
+    <label for="pepsi"><img src="pepsi.png" width="5%" height="5%" ></label>
+    <div class=bar>
+        <div id="pepsiBar"></div>
+    </div>
+
+    <input type="radio" id="cola" name=drink>
+    <label for="cola"><img src="cola.png" width="5%" height="5%" ></label>
+    <div class=bar>
+        <div id="colaBar"></div>
+    </div>
+
+    <input type="radio" id="fanta" name=drink>
+    <label for="fanta"><img src="fanta.png" width="5%" height="5%" ></label>
+    <div class=bar>
+        <div id="fantaBar"></div>
+    </div>
+
+    <input type="radio" id="sprite" name=drink>
+    <label for="sprite"><img src="sprite.png" width="5%" height="5%" ></label>
+    <div class=bar>
+        <div id="spriteBar"></div>
+    </div>
+    <br>
+    <button id=but onchange="but()" onclick="move()">Vote</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

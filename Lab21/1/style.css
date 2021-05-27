@@ -1,0 +1,29 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    color: white;
+    background: #000080;
+    font-size: 22px;
+    height: 50px;
+}
+
+table {
+    width: 1200px;
+    height: 650px;
+}
+
+.center {
+    width: 500px;
+    height: 15px;
+    border-top: 2px solid #c8c8c8;
+}
+
+#empty {
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}

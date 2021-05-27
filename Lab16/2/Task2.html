@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="">
+        <p class=title>Регистрация</p><br>
+        <input type="text" id=name placeholder="Имя пользователя"><br>
+        <span>*Неверное имя </span><br>
+        <input type="email" name="" id="email" placeholder="Электронная почта"><br>
+        <span>*Неверно введен адрес</span><br>
+        <input type="text" id=password1 placeholder="Пароль"><br>
+        <span>*Пароль должен быть от 4 до 8 символов</span><br>
+        <input type="text" id=password2 placeholder="Повторить пароль"><br>
+        <span>*Пароли не совпадают</span><br>
+
+        <div class="checkbox">
+        Хобби <br><input type="checkbox" name="check" id="swim">
+        <label for="swim">Плаванье</label> 
+        
+        <input type="checkbox" name="check" id="read"> 
+        <label for="read">Чтение</label>
+        
+        <input type="checkbox" name="check" id="nothing">
+        
+        <label for="nothing">Ничего</label><br>
+        <span>*Хобби не выбрано</span><br>
+    </div>
+        <input type="text" onfocus="(this.type='date')" name="" id="date" placeholder="Дата рождения"><br>
+        <span>*Дата не выбрана</span><br>
+
+        <select name="" id=select> <option value="" disabled selected >Страна рождения</option> <option value="russia">Россия</option> <option value="USA">США</option></select><br>
+    
+        <span>*Страна не выбрана</span><br>
+        <div>
+            Комментарий<br> <textarea name="" id="" cols="36" rows="5"></textarea><br>
+        </div>
+        
+
+        
+    <div class=radio>
+        Хотите получить рассылку?<br>
+        <input type="radio" name="comment" id="yes">
+        <label for="yes">Да</label>
+        
+        <input type="radio" name="comment" id="sure">
+        <label for="sure">Конечно</label>
+
+        <input type="radio" name="comment" id="yeah">
+        <label for="yeah">С удовольствием</label><br>
+    </div>
+        <span>*Выберите тип рассылки</span><br>
+        <input type="button" value="Отправить" onclick="validateForm()">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

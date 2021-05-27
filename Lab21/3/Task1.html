@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table td {
+            border: 2px solid black;
+            padding: 20px;
+        }
+        
+        td,
+        th {
+            table-layout: fixed;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        button {
+            width: 130px;
+            height: 30px;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid black;
+            background: white;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: lightgray;
+        }
+        
+        button:active {
+            background: white;
+        }
+        
+        button:disabled {
+            background: white;
+        }
+        
+        span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="startGame()" id=button>Начать</button>
+    <button onclick="window.location.reload()" id=reset>Перезапуск</button><br>
+    <span>Время:</span><span id=timer>40</span>
+    <script src="script.js"></script>
+</body>
+
+</html>
